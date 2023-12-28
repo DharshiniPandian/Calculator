@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm373batch13-082-kpxk9ngk.jpg?w=1300&dpr=1&fit=default&crop=default&q=80&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=fb996a72e7dec1a8b1fe36cd5761970d);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: #2b608b;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #1e4a78; /* Outline color */
+}
+
+.calculator form input {
+    border: 3px solid #1e4a78; /* Outline color */
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.calculator form input:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal {
+    width: 145px;
+}
+
+form input.operator {
+    color: #a2c8f0;
+    background: #1e4a78;
+    border: 2px solid #1e4a78; /* Outline color */
+}
+
+form input.operator:hover {
+    background: #6293c8;
+    color: #080e14;
+}
+
+a {
+    color: #1e4a78;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.container button a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
